@@ -6,7 +6,9 @@ import Color from "../../utilities/color";
 const styles = StyleSheet.create({
     mainContainer : {
         flex : 1,
-        alignItems :"center"
+        alignItems :"center",
+        padding : 10
+       
     },
     headerContainer : {
         flex : 0.05,
@@ -14,19 +16,18 @@ const styles = StyleSheet.create({
     },
     headerText : {
         fontSize: 20,
-        fontWeight : "700"
+        fontWeight : "700",
     },
     flagContainer : {
-        flex : 0.95,
-        justifyContent :"center",
+        flex : 0.5,
+        justifyContent :"space-between",
         alignItems : "flex-start",
-        paddingVertical : 10
+        paddingVertical : 20,
     },
     flagStyle : {
         height : 100,
         width : 100,
-        paddingTop : 20,
-        paddingBottom : 30,
+        paddingVertical : 20,
     },
     textStyle : {
         fontSize : 20,

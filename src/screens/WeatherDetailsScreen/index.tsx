@@ -15,7 +15,7 @@ const WeatherScreen:FC<Props> = (props) => {
             <View style= {styles.headerContainer}>
                 <Text style ={styles.headerText}>Weather Details</Text>
             </View>
-            <View style = {styles.flagContainer}>
+            <View style = {[styles.flagContainer]}>
                 <Image source={data.weatherImage} style = {styles.flagStyle}/>
                     <Text style = {styles.textStyle}>{`Temperature : ${data.temprature} *C`}</Text>
                     <Text style = {styles.textStyle}>{`Precipitaion : ${data.precipitation} %`}</Text>
