@@ -3,10 +3,12 @@ import React, { FC } from "react";
 import { View,Text,TouchableOpacity,Image } from "react-native";
 import styles from "./styles";
 import axios from 'axios';
+import {NativeStackScreenProps} from "@react-navigation/native-stack";
+import { stackParams } from "../../navigations/Navigations";
 
+type Props = NativeStackScreenProps<stackParams,"Country">
 
-
-const CountryScreen:FC = (props:any) => {
+const CountryScreen:FC<Props> = (props) => {
     let data = props.route.params
     console.log("CountryScreenData",data);
     const accessKey = "9a04cf5f0c6e4bb4243bc8ba1f0a095b"; 

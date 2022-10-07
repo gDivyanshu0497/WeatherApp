@@ -1,10 +1,13 @@
 
 import React, { FC } from "react";
-import { View,Text,TouchableOpacity,Image } from "react-native";
+import { View,Text,Image } from "react-native";
 import styles from "./styles";
+import {NativeStackScreenProps} from "@react-navigation/native-stack";
+import { stackParams } from "../../navigations/Navigations";
 
+type Props = NativeStackScreenProps<stackParams,"Weather">
 
-const WeatherScreen:FC = (props:any) => {
+const WeatherScreen:FC<Props> = (props) => {
     let data = props.route.params
     console.log("weather Data",data)
     return(

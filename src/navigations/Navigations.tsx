@@ -7,9 +7,23 @@ import { HomeStackNavigatorParamList } from './types';
 import WeatherScreen from '../screens/WeatherDetailsScreen';
 
 
+export type stackParams = {
+    InputScreen : undefined,
+    Country : {
+        capital : string,
+        population : number | string,
+        latlng : any,
+        flags : any
+    },
+    Weather : {
+        temprature : number | string,
+        precipitation : number,
+        windSpeed : number | string,
+        weatherImage : any
+    }
+}
 
-
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<stackParams>();
 
 
 const Navigations : FC = () => {
